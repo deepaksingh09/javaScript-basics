@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string for each loop</title>
+</head>
+<body>
+    <script>
+        //with indexing
+        var arr2=['python','html','django','java','c++']
+        arr2.forEach(function(element,index)
+            {
+                document.write(element,index,"<br>")
+            }
+            );
+    </script>
+    <hr>
+        <script>
+            //without indexing
+            var arr2=['python','html','django','java','c++']
+            arr2.forEach(function(element)
+                {
+                    document.write(element,"<br>")
+                }
+                );
+        </script>
+    
+</body>
+</html>

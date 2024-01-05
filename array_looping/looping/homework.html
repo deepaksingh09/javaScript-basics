@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+</head>
+<body>
+    <h1>for loop</h1>
+    <script>
+        var arr1=[10,"hello",true,undefined,null,]
+        for(i=0;i<arr1.length;i++)
+            document.write(arr1[i],"<br>")
+    </script>
+    <hr>
+    <h1>for of loop</h1>
+    <script>
+         var arr1=[10,"hello",true,undefined,null,]
+         for(var x of arr1)
+         {
+            document.write(x,"<br>")
+         }
+
+    </script>
+    <hr>
+    <h1>for each loop</h1>
+    <script>
+         var arr1=[10,"hello",true,undefined,null,]
+         arr1.forEach(function(element,index)
+         {
+            document.write(element,index,"<br>")
+         }
+         )
+    </script>
+    <hr>
+    <h1>while loop</h1>
+    <script>
+        var arr1=[10,"hello",true,undefined,null,]
+        var i=0;
+        while(i<arr1.length)
+        {
+            document.write(arr1[i],"<br>")
+            i++;
+        }
+    </script>
+    <hr>
+    <h1>do while</h1>
+    <script>
+        var arr1=[10,"hello",true,undefined,null,]
+        var i=0;
+        do{
+            document.write(arr1[i],"<br>")
+            i++;
+        }
+        while(i<arr1.length)
+    </script>
+
+</body>
+</html>

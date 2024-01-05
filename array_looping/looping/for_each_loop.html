@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For each loop</title>
+</head>
+<body>
+    <script>
+        //without indexing
+        var arr1=[10,20,30,40,50];
+        arr1.forEach(function(element)
+        {
+            document.write(element,"<br>")
+        }
+        );
+
+    </script>
+    <hr>
+        <script>
+            //with indexing
+            var arr2=[20,30,40,50];
+            arr2.forEach(function(element,index)
+            {
+                document.write(element,index,"<br>")
+            }
+            );
+    
+        </script>
+</body>
+</html>
