@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>common </title>
+</head>
+<body>
+    <script>
+        document.write("for() loop","<br>")
+        document.write("---------------------------------","<br>")   
+ 
+        var arr1=[10,"hello",true,undefined,null,]
+        for(i=0;i<arr1.length;i++){
+            document.write(arr1[i],"<br>")}
+        document.write("---------------------------------","<br>")   
+        document.write("for-----of loop","<br>")
+        document.write("---------------------------------","<br>")
+        for(var x of arr1)
+         {
+            document.write(x,"<br>")
+         }
+         document.write("---------------------------------","<br>") 
+         document.write("forEach() loop","<br>")
+        document.write("---------------------------------","<br>")
+        arr1.forEach(function(element,index)
+        {
+            document.write(element,index,"<br>")
+        }
+        )
+        document.write("---------------------------------","<br>")
+
+        document.write("while() loop","<br>")
+        document.write("---------------------------------","<br>")
+        var i=0;
+        while(i<arr1.length)
+        {
+            document.write(arr1[i],"<br>")
+            i++;
+        }
+        document.write("---------------------------------","<br>")
+        document.write("do while() loop","<br>")
+        document.write("---------------------------------","<br>")
+        var i=0;
+        do{
+            document.write(arr1[i],"<br>")
+            i++;
+        }
+        while(i<arr1.length)
+    </script>
+    
+</body>
+</html>

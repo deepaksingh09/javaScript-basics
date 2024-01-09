@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constant loop</title>
+</head>
+<body>
+    <script>
+        const arr=[100,200,300,400]
+        document.write("for() loop","<br>")
+        document.write("---------------------------------","<br>")  
+        for(let i=0;i<arr.length;i++)
+        {
+            document.write(arr[i],"<br>")
+        }
+        document.write("---------------------------------","<br>")
+        document.write("for---of loop","<br>")
+        document.write("---------------------------------","<br>")
+        for(let x of arr){
+        document.write(x,"<br>") }
+        document.write("---------------------------------","<br>")
+        document.write("forEach loop","<br>")
+        document.write("---------------------------------","<br>")
+        arr.forEach(function(element,index)
+        {
+            document.write(element,"----",index,"<br>")
+        }
+        )
+        document.write("---------------------------------","<br>")
+        document.write("while loop","<br>")
+        document.write("---------------------------------","<br>")
+        let i=0
+        while(i<arr.length)
+        {
+            document.write(arr[i],"<br>")
+            i++;
+        }
+        document.write("---------------------------------","<br>")
+        document.write("do ---while loop","<br>")
+        document.write("---------------------------------","<br>")
+        let y=0;
+        do{
+            document.write(arr[y],"<br>")
+            y++;
+        }
+        while(y<arr.length)
+    </script>
+    
+</body>
+</html>
