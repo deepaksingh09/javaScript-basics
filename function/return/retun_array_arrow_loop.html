@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>return array using for loop</title>
+    </head>
+    <body>
+        <script>
+            let fun=()=>
+            {
+            return [10,20,30,40,50];
+            }
+            let res= fun()
+            document.write("---------for loop-------------","<br>")
+            for(let i=0; i<res.length;i++)
+            {
+                document.write(res[i],"<br>")
+            }   
+
+document.write("---------------------------------------------------------------------------","<br>")
+            document.write("-----forEach -------","<br>")
+
+            res.forEach(function(elements,index){
+                document.write(elements,"-----",index,"<br>")
+            });
+document.write("---------------------------------------------------------------------------","<br>")
+
+            document.write("----------for of---------------","<br>")
+            for(let x of res)
+            {
+                document.write(x,"<br>")
+            }
+document.write("---------------------------------------------------------------------------","<br>")
+            document.write("--------while==========","<br>")
+            let a=0;
+            while(a<res.length)
+            {
+                document.write(res[a],"<br>")
+                a++;
+            }
+   document.write("---------------------------------------------------------------------------","<br>")
+            document.write("-----------while do-----------","<br>")
+            let n=0;
+            do{
+                document.write(res[n],"<br>")
+                n++;
+
+            }
+            while(n<res.length)
+        </script>
+
+    </body>
+</html>

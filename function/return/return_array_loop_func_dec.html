@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array</title>
+    </head>
+    <body>
+        <script>
+            function func_one()
+            {
+                return [10,20,30,40,50];
+            }
+            var res=func_one();
+            document.write("----------for-------------------","<br>")
+            for(let x=0;x<res.length;x++)
+            {
+            document.write(res[x],"<br>")
+            }
+            document.write("----------forEach-------------------","<br>")
+            //let res =fun_one();
+            res.forEach(function(elements,index,)
+            {
+                document.write(elements,"-----",index,"<br>")
+            })
+            document.write("-------------for of------","<br>")
+            for(let a of  res)
+            {
+                document.write(a,"<br>")
+            }
+            document.write("------------while loop----","<br>")
+            var i=0;
+            while(i<res.length)
+            {
+                document.write(res[i],"<br>")
+                i++;
+            }
+            document.write("---------do while loop----","<br>")
+            var y=0;
+            do{
+                document.write(res[y],"<br>")
+                y++;
+
+            }
+            while(y<res.length)
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array anonyomous</title>
+    </head>
+    <body>
+        <script>
+            let fun=function()
+            {
+                return [10,20,30,40,50];
+
+            }
+            let res =fun();
+            document.write("---------for----------","<br>")
+            for(let x=0;x<res.length;x++)
+            {
+            document.write(res[x],"<br>")
+            }
+            document.write("---------foreach---------","<br>")
+            res.forEach(function(elements,index)
+            {
+                document.write(elements,"-----",index,"<br>")
+            })
+            document.write("------------------while loop------------------------","<br>")
+            // defining varible for the  while loop
+            let i=0;
+            while(i<res.length)
+            {
+                document.write(res[i],"<br>")
+                i++;
+            }
+            document.write("-----------do while loop---------","<br>")
+            let z=0;
+            do{
+                document.write(res[z],"<br>")
+                z++;
+            }
+            while(z<res.length)
+            
+        </script>
+    </body>
+</html>
