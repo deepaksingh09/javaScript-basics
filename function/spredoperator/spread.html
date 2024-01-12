@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spred operator in javascript</title>
+    </head>
+    <body>
+        <script>
+            function func_one(...para1)
+            {
+                console.log(para1);
+            }
+            func_one(10,20,30,40,50);
+            //calling again
+            func_one('ReactJS','Python','Django','JavaScript')
+            //calling again
+            func_one(undefined,null,undefined,null)
+        </script>
+    </body>
+</html>
