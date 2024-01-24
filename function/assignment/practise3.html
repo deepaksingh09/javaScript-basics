@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let func_one=()=>{
+            //array of objects- bcz we have keys and values
+            let arr=[{"eid":101,"ename":"eone","esal":10000},
+                     {"eid":102,"ename":"etwo","esal":20000},
+                     {"eid":103,"ename":"ethree","esal":30000},
+                     {"eid":104,"ename":"efour","esal":40000},
+                     {"eid":105,"ename":"efive","esal":50000}];
+            document.write(`<table border=2px
+                                   align="center"
+                                   collspacing="5px
+                                   cellpadding="5px"
+                                   >
+                                   <tr>
+                                       <th>eid</th>
+                                       <th>ename</th>
+                                       <th>esal</th>
+                                    </tr>`)
+            //iterating with foreach
+            arr.forEach((element,index)=>{
+                document.write(`<tr>
+                                <td>${element.eid}</td>
+                                <td>${element.ename}</td>
+                                <td>${element.esal}</td>
+                                </tr>`);
+            });
+            //closing table
+            document.write(`</table`)
+             
+        }
+        func_one()
+    </script>
+    
+</body>     
+</html>

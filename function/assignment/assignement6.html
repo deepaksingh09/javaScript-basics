@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function table</title>
+</head>
+<body>
+    <script>
+        let func_table=()=>
+        {
+            let employees=[{"eid":101,"ename":"eone","esal":10000,"edesignation":"jr.dev"},
+                     {"eid":102,"ename":"etwo","esal":20000,"edesignation":"sr.dev"},
+                     {"eid":103,"ename":"ethree","esal":30000,"edesignation":"lead"},
+                     {"eid":104,"ename":"efour","esal":40000,"edesignation":"sr.lead"},
+                     {"eid":105,"ename":"efive","esal":50000,"edesignation":"manager"}];
+        //creating table 
+            document.write(`<table border =2px
+                                    align="center"
+                                    cellpadding="10px"
+                                    cellspacing="10px">
+                                    <tr>
+                                        <th>eid</th>
+                                        <th>ename</ename>
+                                        <th>esal</th>
+                                        <th>edesignation</th>
+                                        <tr>
+                                            `)
+        //after creating table we will iterate table using forEach loop
+            employees.forEach((element,index)=>
+            {
+                //now we are inserting data into table
+               document.write(` <tr>
+                <td>${element.eid}</td>
+                <td>${element.ename}</td>
+                <td>${element.esal}</td>
+                <td>${element.edesignation}</td>
+                    </tr>`);
+                })
+        //closing the table
+        document.write(`</table>`)
+
+           
+                    }
+        //calling function
+        func_table()
+    </script>
+    
+</body>
+</html>

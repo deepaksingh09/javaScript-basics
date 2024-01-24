@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<fieldset>
+    <legend>Calculator</legend>
+    Enter num1:<input type="number" id="num1" placeholder="enter number">
+    <br><br>
+    Enter num2:<input type="number" id="num2" placeholder="enter number">
+    <br><br>
+    Addition:<input type="number" id="add" placeholder="Addition">
+    <br><br>
+    Subtraction: <input type="number" id="Sub" placeholder="Subtraction">
+    <br><br>
+    Multiplication: <input type="number" id="Multi" placeholder="Multiplication">
+    <br><br>
+    <button onclick="Calc()">Calculate</button>
+</fieldset>
+<script>
+    let Calc=()=>{
+        let x=parseInt(document.getElementById("num1").value);
+        let y=parseInt(document.getElementById("num2").value)
+        document.getElementById("add").value=x+y;
+        document.getElementById("Sub").value=x-y;
+        document.getElementById("Multi").value=x*y;   
+         }
+</script>
+</body>
+</html>
